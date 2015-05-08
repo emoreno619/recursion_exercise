@@ -6,7 +6,7 @@
 function nBottlesR(n){
 	var lyrics = "";
 	if (n != 0){
-		if (n != 1 || n != 2){
+		if (n != 1 && n != 2){
 			lyrics  = lyrics  = n + " bottles of beer on the wall, " + n + " bottles of beer, take one down, pass it around, " + (n -1) + " bottles of beer on the wall.";
 			return lyrics + nBottlesR(n-1);
 		} else {
